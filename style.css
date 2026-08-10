@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(222, 138, 255);
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+hr {
+    display: none;
+}
+/* Cabeçalho  e rodapé */
+header {
+        background-color: rgb(215, 75, 166);
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+}
+header h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: darkblue;
+    font-size: 0,875rem;
+    margin-top: 30px;
+}
+/* Estrutura de colunas da página */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+header,footer{
+    width: 100%;
+}
+/* Menu lateral */
+aside{
+    flex: 1;
+    min-width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    height: fit-content;
+}
+aside ul{
+    list-style: none;
+}
+aside li{
+    margin-bottom: 10px;
+}
+
+aside a{
+    text-decoration: none;
+    color: royalblue;
+    font-size: 0.95rem;
+}
+
+aside a:hover{
+    text-decoration: underline;
+
+}
+
+/* Conteudo Principal */
+
+main{
+    flex: 3;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+section h2{
+    font-size:1.25rem;
+    margin-bottom: 20px;
+    color: black;
+    border-bottom: 2px solid #f1f5f9;
+    padding: 10px;
+}
+/*Formularios, inputs e botões */
+form label{
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: darkorchid;
+}
+
+input[type="text"]
+input[type="number"]
+input[type="date"]
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+}
+input:focus, select:focus{
+    outline: none;
+    border-color: hotpink;
+}
+/* Botões de ação */
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+button[type="submit"]:hover{
+    background-color: floralwhite;
+    color: #ffffff;
+}
+button [type="submit"]:hover{
+    background-color: lightpink;
+}
+button[type="reset"]{
+    background-color: lightpink;
+    color: #ffffff;
+}
+button [type="reset"]:hover{
+    background-color: whitesmoke;
+}
