@@ -136,3 +136,44 @@ button[type="reset"]{
 button [type="reset"]:hover{
     background-color: whitesmoke;
 }
+/* Tabela de Estoque */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0,9rem;
+}
+
+/* Remove a borda padrão border="1" do HTML */
+table, th, td{
+    border: none;
+}
+
+thead {
+    background-color: #e2e8f0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    color:plum;
+    font-weight: 600;
+}
+
+/*Efeito Zebrado nas linhas */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+tbody tr:houver {
+    background-color: #f1f5f9;
+}
+tfoot {
+    background-color: #f1f5f9;
+}
+tfoot td {
+    border-bottom: none;
+}
