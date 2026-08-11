@@ -1,3 +1,4 @@
+/* 1. Reset de margens e configuração global */
 *{
     margin:0;
     padding:0;
@@ -5,18 +6,19 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(222, 138, 255);
+    background-color: #f4f6f9;
     color: #333333;
     line-height: 1.6;
     padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
 hr {
     display: none;
 }
 /* Cabeçalho  e rodapé */
 header {
-        background-color: rgb(215, 75, 166);
+        background-color: #0f172a;
         color: #ffffff;
         padding: 20px;
         border-radius: 8px;
@@ -29,54 +31,14 @@ header h1{
 footer{
     text-align: center;
     padding: 20px;
-    color: darkblue;
+    color: #64748b;
     font-size: 0,875rem;
     margin-top: 30px;
 }
-/* Estrutura de colunas da página */
-body{
+/* Estrutura dos Cartões */
+main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-header,footer{
-    width: 100%;
-}
-/* Menu lateral */
-aside{
-    flex: 1;
-    min-width: 200px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    height: fit-content;
-}
-aside ul{
-    list-style: none;
-}
-aside li{
-    margin-bottom: 10px;
-}
-
-aside a{
-    text-decoration: none;
-    color: royalblue;
-    font-size: 0.95rem;
-}
-
-aside a:hover{
-    text-decoration: underline;
-
-}
-
-/* Conteudo Principal */
-
-main{
-    flex: 3;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 20px;
 }
 section{
@@ -90,90 +52,39 @@ section h2{
     margin-bottom: 20px;
     color: black;
     border-bottom: 2px solid #f1f5f9;
-    padding: 10px;
+    padding-bottom: 10px;
 }
-/*Formularios, inputs e botões */
+section ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+section li{
+    background-color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+/*Formularios, inputs e seleções */
 form label{
     font-weight: 600;
     font-size: 0.875rem;
-    color: darkorchid;
+    color: #475569;
 }
-
-input[type="text"]
-input[type="number"]
-input[type="date"]
-select{
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #e2e8f0;
-    font-size: 0.95rem;
-}
-input:focus, select:focus{
-    outline: none;
-    border-color: hotpink;
-}
-/* Botões de ação */
-button{
-    padding: 10px 20px;
-    border: none;
+    border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 0.95rem;
-    cursor: pointer;
-    margin-right: 10px;
+    font-family: inherit;
 }
-button[type="submit"]:hover{
-    background-color: floralwhite;
-    color: #ffffff;
+textarea {
+    resize: vertical;
 }
-button [type="submit"]:hover{
-    background-color: lightpink;
-}
-button[type="reset"]{
-    background-color: lightpink;
-    color: #ffffff;
-}
-button [type="reset"]:hover{
-    background-color: whitesmoke;
-}
-/* Tabela de Estoque */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    font-size: 0,9rem;
-}
-
-/* Remove a borda padrão border="1" do HTML */
-table, th, td{
-    border: none;
-}
-
-thead {
-    background-color: #e2e8f0;
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #e2e8f0;
-}
-
-th {
-    color:plum;
-    font-weight: 600;
-}
-
-/*Efeito Zebrado nas linhas */
-tbody tr:nth-child(even) {
-    background-color: #f8fafc;
-}
-tbody tr:houver {
-    background-color: #f1f5f9;
-}
-tfoot {
-    background-color: #f1f5f9;
-}
-tfoot td {
-    border-bottom: none;
+input:focus, select:focus, textarea:focus {
+    outline: ;
 }
